@@ -8,9 +8,9 @@ import Table from "./components/Table/table.jsx";
 function App(props) {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    setUsers(props.users);
-  }, [users]);
-  let active = users.filter(user => user.status == true) 
+    setUsers(props.users.filter(user => user.status !== undefined).length);
+  }, [props.users]);
+  
   return (
     <div className="App container-fluid ">
       <main className="container m-auto ">
@@ -21,7 +21,7 @@ function App(props) {
               Users
             </p>
             <div className="col-md-5 text-right">
-              {active.length} Selected
+              {users} Selected
               <img className="img-right" src={Qmark} alt="loading" />
             </div>
           </div>
