@@ -1,10 +1,25 @@
 .App {
   text-align: center;
+  height: 100vh;
 }
-
+main{
+  padding-top: 50px !important;
+}
+.img-right{
+  margin-right: -45px;
+  margin-left: 25px;
+}
+.img-left{
+  margin-right: 25px;
+  width: 50px;
+  height: 30px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.status{
+  cursor: pointer;
 }
 
 @media (prefers-reduced-motion: no-preference) {

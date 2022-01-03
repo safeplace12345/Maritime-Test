@@ -1,0 +1,20 @@
+.thead > tr > th {
+  height: 15px;
+  width: 33px;
+  color: #39628D !important;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 15px;
+}
+
+.td {
+  height: 18px;
+  width: 117px;
+  color: #39628D;
+  font-family: Montserrat;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
